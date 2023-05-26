@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./sass/main.scss" />
+  </head>
+  <style>
+    li {
+      display: block;
+      max-width: 274px;
+      text-decoration: none;
+    }
+    li img {
+      display: block;
+    }
+  </style>
+
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <!-- header-top -->
+        <div class="header-top-container">
+          <a class="header-link" href="/">
+            <img
+              class="header-img"
+              src="./img/film.png"
+              alt="logo"
+              width="22"
+              height="22"
+            />
+            <h1 class="header-text">MOVIELAND</h1>
+          </a>
+          <form class="header-form">
+            <div class="group">
+              <input
+                id="query-input"
+                type="text"
+                name="query"
+                placeholder="Movie search"
+              />
+              <span class="bar"></span>
+              <p class="query-warning visually-hidden">
+                Search result not successful. Enter the correct movie name
+              </p>
+            </div>
+          </form>
+          <nav class="nav-container">
+            <a href="/" class="header-home current">Home</a>
+            <a href="./my-library.html" class="header-library">my library</a>
+          </nav>
+        </div>
+      </div>
+      <div class="owl-carousel owl-theme header-backdrop_path">
+        <div><img src="./img/John-wick-banner.jpg" alt="backdrop_path1" /></div>
+
+        <div>
+          <img
+            src="./img/nDxJJyA5giRhXx96q1sWbOUjMBI.jpg"
+            alt="backdrop_path2"
+          />
+        </div>
+
+        <div>
+          <img src="./img/49835013-2434989.jpeg" alt="backdrop_path3" />
+        </div>
+
+        <div><img src="./img/3.jpg" alt="backdrop_path4" /></div>
+      </div>
+    </header>
+  </body>
+</html>

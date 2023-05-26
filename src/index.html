@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOVIELAND</title>
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./sass/main.scss" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <!-- header-top -->
+        <div class="header-top-container">
+          <div>
+            <a class="header-link" href="/">
+              <span>
+                <img class="header-img" src="./img/logo.svg" alt="logo" />
+              </span>
+              <h1 class="header-text">MovieBox</h1>
+            </a>
+          </div>
+          <form class="header-form">
+            <div class="group">
+              <input
+                id="query-input"
+                type="text"
+                name="query"
+                placeholder="Щоб ви хотіли подивитися?"
+              />
+              <p class="query-warning visually-hidden">
+                Search result not successful. Enter the correct movie name
+              </p>
+            </div>
+          </form>
+          <nav class="nav-container">
+            <a href="./my-library.html" class="header-library">мої фильми</a>
+          </nav>
+        </div>
+      </div>
+      <div class="owl-container">
+        <div class="owl-carousel owl-theme header-backdrop_path">
+          <div>
+            <div class="header-backdrop_path-flex">
+              <div class="header-backdrop_path_text">Джон Уік 4</div>
+              <span>8.2</span>
+              <div class="header-backdrop_path_text2">
+                Джон Вік відкриває шлях до перемоги над Високим Столом. Але перш
+                ніж здобути свободу, Вік мусить зіткнутися з новим ворогом, який
+                має потужні альянси по всьому світу і сили, що перетворюють
+                старих друзів на ворогів.
+              </div>
+              <a
+                href="https://www.youtube.com/watch?v=nR3UhmqJR5s&ab_channel=planetakino"
+                target="_blank"
+                ><img src="./img/Trailer.svg" alt="tratler" />дивитися
+                трейлер</a
+              >
+            </div>
+            <img src="./img/wSE_ha9dEL7qTzMUepTYUg.png" alt="backdrop_path1" />
+          </div>
+          <div>
+            <div class="header-backdrop_path-flex">
+              <div class="header-backdrop_path_text">Брати Супер Маріо</div>
+              <span>7.3</span>
+              <div class="header-backdrop_path_text2">
+                Історія про братів Супер Маріо та їхню подорож Грибним
+                королівством.
+              </div>
+              <a
+                href="https://www.youtube.com/watch?v=9lggvvZxRZo&ab_channel=B%26HFilmDistributionCompany"
+                target="_blank"
+                ><img src="./img/Trailer.svg" alt="tratler" />дивитися
+                трейлер</a
+              >
+            </div>
+            <img src="./img/Брати_Супер_Маріо.jpg" alt="backdrop_path2" />
+          </div>
+          <div>
+            <div class="header-backdrop_path-flex">
+              <div class="header-backdrop_path_text">
+                Людина-мураха та Оса: Квантоманія
+              </div>
+              <span>6.3</span>
+              <div class="header-backdrop_path_text2">
+                Скотта Ленга та Гоуп Ван Дайн затягує у Квантове царство, разом
+                із батьками Гоуп та донькою Скотта Кессі. Разом вони повинні
+                знайти спосіб врятуватися, але які таємниці приховує мати Хоуп?
+                І хто такий таємничий Канг?
+              </div>
+              <a
+                href="https://www.youtube.com/watch?v=yssBytRtEsM&ab_channel=KinomaniaFilmDistribution"
+                target="_blank"
+                ><img src="./img/Trailer.svg" alt="tratler" />дивитися
+                трейлер</a
+              >
+            </div>
+            <img src="./img/люди_мураза.jpg" alt="backdrop_path3" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="pagination-buttons"></div>
+      <div class="backdrop visually-hidden" data-modal></div>
+      <div class="home-list"></div>
+      <!-- <li class="home-list-card">
+        <img
+          class="home-list-img"
+          src="./img/example.jpg"
+          alt="movie picture"
+          data-id="${id}"
+        />
+        <p class="home-card-country_and_data">USA | 2022</p>
+        <p class="home-card-title">Название фильма</p>
+        <div class="card-list">
+          <p class="home-card-сategory">Жанры</p>
+          <p class="home-card-rating">8,5</p>
+        </div>
+      </li> -->
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <p class="footer-text-first-part">
+          &copy; 2023 | All Rights Reserved | Developer with MARI4OK
+        </p>
+      </div>
+    </footer>
+
+    <!-- button Up -->
+    <button type="button" class="btnUp visually-hidden"></button>
+    <script src="./js/jquery-3.6.4.slim.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        autoplayHoverPause: true,
+        autoplay: true,
+        loop: true,
+        animateOut: "fadeOut",
+        animateIn: "flipInX",
+        items: 1,
+        smartSpeed: 5,
+        touchDrag: false,
+        mouseDrag: false,
+      });
+    </script>
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>
